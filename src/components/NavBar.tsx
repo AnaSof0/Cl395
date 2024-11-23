@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const NavBar: React.FC = () => {
@@ -6,13 +7,22 @@ const NavBar: React.FC = () => {
     <div className="navbar">
       <h2 className="navbar-title">Monster Project</h2>
       <ul className="navbar-menu">
-        <li className="navbar-item"><a href="/" className="navbar-link">Home</a></li>
-        <li className="navbar-item"><a href="s1" className="navbar-link">SE 1</a></li>
-        <li className="navbar-item"><a href="s2" className="navbar-link">SE 2</a></li>
-        <li className="navbar-item"><a href="s3" className="navbar-link">SE 3</a></li>
+        <li className="navbar-item">
+          <Link to="/" className="navbar-link">Home</Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/s1" className="navbar-link">SE 1</Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/s2" className="navbar-link">SE 2</Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/s3" className="navbar-link">SE 3</Link>
+        </li>
       </ul>
     </div>
   );
 };
 
 export default NavBar;
+
