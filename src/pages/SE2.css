@@ -1,0 +1,17 @@
+.essay-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stacked-image {
+    width: 100%; /* Adjust width as needed */
+    max-width: 800px; /* Optional: limit maximum size */
+    margin-bottom: 20px; /* Space between images */
+  }
+  
