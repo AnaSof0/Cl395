@@ -15,13 +15,13 @@ const SE1: React.FC = () => {
     <div className="essay-page">
         <h1>Sorry To Bother You</h1>
       <div className="content">
-        <h1 className="essay-title">“This is telemarketing...”</h1>
+        <h1 className="essay-title">“This is telemarketing...</h1>
         
         <img src={sorry1} alt="Sorry to Bother You scene" className="photo1" />
 
         <p className="essay-paragraph">
         <br/>
-        is what Cassius Green is told when he is offered his job at RegalView in Sorry to Bother You. At first, this line seems like a light-hearted joke, minimizing the importance of the job. 
+        " is what Cassius Green is told when he is offered his job at RegalView in Sorry to Bother You. At first, this line seems like a light-hearted joke, minimizing the importance of the job. 
         However, as the film progresses, this seemingly insignificant line takes on a new meaning—it refers to the more sinister reality of corporate exploitation that the film ultimately critiques. 
         By the end, it becomes clear that WorryFree was indeed mapping the human genome to create an efficient and docile workforce, making this lighthearted joke a foreshadowing of the movie.
         </p>

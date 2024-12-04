@@ -1,29 +1,120 @@
-/* Main.css */
+
+ /* Main.css */
 
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fafafa; /* Softer background for better readability */
+  color: #2d2f3a; /* Darker text for better contrast */
+}
+
+.main {
+  margin: 0 auto; /* Center content */
+  padding: 40px;
+  margin-left: 270px;
+  max-width: 900px;
+  background: #ffffff; /* White background for a clean look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  border-radius: 10px;
+}
+
+.main-title {
+  font-size: 36px; /* Larger, prominent title */
+  font-weight: bold;
+  line-height: 1.4;
+  color: #2d2f3a;
+  margin-bottom: 30px;
+  text-align: center; /* Center-align for emphasis */
+}
+
+.main-subtitle {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.essay-content h2, 
+.essay-content h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.essay-content p {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.essay-content em {
+  font-style: italic;
+  color: #007acc; /* Accent color for film titles */
+}
+
+.essay-content h2 {
+  font-size: 28px;
+  border-bottom: 2px solid #007acc; /* Add a line for emphasis */
+  padding-bottom: 10px;
+}
+
+.essay-content h3 {
+  font-size: 22px;
+  border-left: 4px solid #007acc; /* Add a colored line for differentiation */
+  padding-left: 10px;
+}
+
+/* Styling for the image */
+.photo1 {
+  display: block; /* Ensure it's treated as a block element */
+  max-width: 100%; /* Scale the image proportionally to fit container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px auto; /* Center the image and add vertical spacing */
+  border-radius: 10px; /* Slight rounding of corners for a polished look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   .main {
-    margin-left: 270px; /* To accommodate the left navbar */
-    padding: 40px;
-    max-width: 800px;
+      padding: 20px;
   }
   
   .main-title {
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.5;
-    color: #2d2f3a;
-    margin-bottom: 20px;
+      font-size: 28px;
   }
-  
+
   .main-subtitle {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #555;
+      font-size: 16px;
   }
-  
+
+  .essay-content h2 {
+      font-size: 24px;
+  }
+
+  .essay-content h3 {
+      font-size: 18px;
+  }
+
+  .essay-content p {
+      font-size: 14px;
+  }
+
+  .photo1 {
+      margin: 15px auto; /* Adjust spacing on smaller screens */
+  }
+}
+
+/* Add subtle hover effects */
+a:hover, em:hover {
+  text-decoration: underline;
+  color: #005f99; /* Darker accent color */
+}
+
+/* Add smooth transitions for hover effects */
+a, em {
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}

@@ -1,61 +1,100 @@
-/* NavBar.css */
-
+/* Reset styles */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 160px;
+  background: linear-gradient(135deg, #f97eff, #a55bf4,#33f0cd); /* Fun gradient background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+ }
+
+/* Navbar title */
+.navbar-title {
+  font-size: 28px; /* Larger and more eye-catching */
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px rgba(107, 87, 219, 0.3); /* Subtle text shadow */
+}
+
+/* Navbar menu */
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Navbar items */
+.navbar-item {
+  width: 100%;
+  margin: 15px 0;
+}
+
+/* Navbar links */
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px; /* Increased padding for better clickability */
+  display: block;
+  text-align: center;
+  font-size: 18px; /* Larger font for readability */
+  font-weight: 500;
+  border-radius: 8px; /* Rounded corners for a playful design */
+  transition: all 0.3s ease-in-out; /* Smooth transitions */
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+}
+
+/* Hover effects */
+.navbar-link:hover {
+  background: rgba(255, 255, 255, 0.3); /* Highlight effect */
+  color: #2d2f3a;
+  transform: scale(1.1); /* Slight zoom for interactivity */
+}
+
+/* Active link effect */
+.navbar-link:active {
+  transform: scale(1.05) translateX(5px);
+  background: rgba(255, 255, 255, 0.5); /* Slightly more opaque on click */
+}
+
+/* Add fun icon styles (optional, if using icons) */
+.navbar-link::before {
+  display: inline-block;
+  margin-right: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover animation for icons */
+.navbar-link:hover::before {
+  transform: rotate(15deg); /* Rotate icon slightly on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
   .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 150px;
-    background-color: #3d1403;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(200, 32, 234, 0.1);
+      width: 150px; /* Adjust width for smaller screens */
   }
-  
 
   .navbar-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #fb61c5;
+      font-size: 20px;
   }
-  
-  .navbar-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  
-  .navbar-item {
-    width: 100%;
-    margin: 10px 0;
-  }
-  
+
   .navbar-link {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    display: block;
-    border-radius: 4px;
-    transition: background-color 0.3s, transform 0.2s;
+      font-size: 16px;
+      padding: 10px 15px; /* Smaller padding for compact view */
   }
-  
-  .navbar-link:hover {
-    background-color: #61dafb;
-    color: #2d2f3a;
-    transform: translateX(5px);
-  }
-  
-  .navbar-link:active {
-    transform: translateX(8px);
-  }
-  
+}

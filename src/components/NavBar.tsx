@@ -5,6 +5,8 @@ import './NavBar.css';
 const NavBar: React.FC = () => {
   return (
     <div className="navbar">
+      <h4>CI 395<br/>Ana Ramirez</h4>
+      
       <h2 className="navbar-title">Monster Project</h2>
       <ul className="navbar-menu">
         <li className="navbar-item">
